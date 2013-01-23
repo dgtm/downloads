@@ -1,0 +1,9 @@
+<h3>
+<label {{bindAttr for="view.url.elementId"}}>URL</h2>
+</h3>
+{{view Dls.RequestTextField viewName="url" valueBinding="url"}}
+<!-- valueBinding: Which field of the model -->
+<span>
+	<i {{bindAttr class="urlError:icon-remove:icon-ok"}}></i>
+	<!-- Dynamic attributes :: If urlError is true, set class to icon-remove, else icon-ok -->
+</span>
